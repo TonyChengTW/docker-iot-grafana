@@ -38,6 +38,7 @@
   "hideControls": false,
   "id": null,
   "links": [],
+  "refresh": false,
   "rows": [
     {
       "collapse": false,
@@ -52,14 +53,15 @@
           "fill": 1,
           "id": 1,
           "legend": {
+            "alignAsTable": true,
             "avg": false,
-            "current": false,
-            "max": false,
-            "min": false,
-            "rightSide": true,
+            "current": true,
+            "max": true,
+            "min": true,
+            "rightSide": false,
             "show": true,
             "total": false,
-            "values": false
+            "values": true
           },
           "lines": true,
           "linewidth": 1,
@@ -169,7 +171,7 @@
           "yaxes": [
             {
               "format": "celsius",
-              "label": "aa",
+              "label": "溫度",
               "logBase": 1,
               "max": "50",
               "min": "8",
@@ -177,7 +179,7 @@
             },
             {
               "format": "humidity",
-              "label": "bb",
+              "label": "濕度",
               "logBase": 1,
               "max": "100",
               "min": "20",
@@ -242,7 +244,7 @@
     ]
   },
   "time": {
-    "from": "now-24h",
+    "from": "now-12h",
     "to": "now"
   },
   "timepicker": {
@@ -272,5 +274,5 @@
   },
   "timezone": "browser",
   "title": "溫濕概況",
-  "version": 4
+  "version": 3
 }
