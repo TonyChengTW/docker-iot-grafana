@@ -1,7 +1,7 @@
 # InfluxDB Cluster Setup
 
-*The official Grafana docker image
-*Running your Grafana image
+##The official Grafana docker image
+###Running your Grafana image
 
 download docker image:
 ```
@@ -10,7 +10,7 @@ docker pull grafana/grafana
 
 Try it out, default admin user is admin/admin.
 
-*Configuring your Grafana container
+##Configuring your Grafana container
 
 All options defined in conf/grafana.ini can be overriden using environment variables, for example:
 Start Docker
