@@ -32,6 +32,7 @@
   "annotations": {
     "list": []
   },
+  "editMode": false,
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
@@ -50,12 +51,15 @@
           "dashLength": 10,
           "dashes": false,
           "datasource": "${DS_INFLUXDB-IOT}",
+          "decimals": 1,
           "fill": 1,
           "id": 1,
           "legend": {
             "alignAsTable": true,
             "avg": false,
             "current": true,
+            "hideEmpty": false,
+            "hideZero": false,
             "max": true,
             "min": true,
             "rightSide": false,
@@ -90,7 +94,7 @@
               "orderByTime": "ASC",
               "policy": "default",
               "query": "SELECT \"temperature\" FROM \"hat\" WHERE \"location\" = '$Location' AND \"place\" = '$Place'  AND $timeFilter",
-              "rawQuery": true,
+              "rawQuery": false,
               "refId": "A",
               "resultFormat": "time_series",
               "select": [
@@ -173,16 +177,16 @@
               "format": "celsius",
               "label": "溫度",
               "logBase": 1,
-              "max": "50",
-              "min": "8",
+              "max": "50.0",
+              "min": "8.0",
               "show": true
             },
             {
               "format": "humidity",
               "label": "濕度",
               "logBase": 1,
-              "max": "100",
-              "min": "20",
+              "max": "100.0",
+              "min": "20.0",
               "show": true
             }
           ]
@@ -244,7 +248,7 @@
     ]
   },
   "time": {
-    "from": "now-12h",
+    "from": "now-24h",
     "to": "now"
   },
   "timepicker": {
@@ -274,5 +278,5 @@
   },
   "timezone": "browser",
   "title": "溫濕概況",
-  "version": 3
+  "version": 6
 }
